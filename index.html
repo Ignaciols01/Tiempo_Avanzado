@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta del tiempo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <main class="contenedor">
+    <h1>Consulta del tiempo</h1>
+
+    <label for="selector-localidad">Localidad:</label>
+    <select id="selector-localidad">
+      <option value="38.91611,-6.34366">Mérida</option>
+      <option value="40.41678,-3.70379">Madrid</option>
+      <option value="41.38879,2.15899">Barcelona</option>
+    </select>
+
+    <p id="estado">Cargando...</p>
+
+    <section id="panel-actual" hidden>
+      <h2 id="nombre-localidad"></h2>
+      <div id="icono-actual"></div>
+      <p id="descripcion"></p>
+      <ul>
+        <li id="temperatura"></li>
+        <li id="humedad"></li>
+        <li id="viento"></li>
+        <li id="fecha-hora"></li>
+      </ul>
+
+      <h3>Próximas 8 horas</h3>
+      <div id="contenedor-horas" class="grid-horas"></div>
+    </section>
+  </main>
+
+</body>
+</html>
